@@ -2,7 +2,7 @@ up:
 	@echo '************  Criando network ************'
 	@echo '*'
 	@echo '*'
-	docker network inspect novesfora_network >/dev/null 2>&1 || docker network create novesfora_network
+	docker network inspect my_project >/dev/null 2>&1 || docker network create my_project
 	@echo '*'
 	@echo '*'
 	@echo '************  Setando variaveis de ambiente ************'

@@ -26,3 +26,9 @@ Or if you prefer
 ```
 docker-compose up
 ```
+
+### Finishing
+
+The PGAdmin can be accessed by http://localhost and the email and password can be found at .env file.
+The Postgres was configured to be accessed by others containers without any configuration, only indicating
+`postgresql`.

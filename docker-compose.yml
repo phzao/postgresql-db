@@ -14,7 +14,7 @@ services:
     volumes:
       - ./pgsql-data:/var/lib/postgresql/data
     networks:
-      - novesfora-net
+      - my-net
 
   pgadmin4:
     image: dpage/pgadmin4
@@ -27,10 +27,10 @@ services:
     links:
       - postgresql
     networks:
-      - novesfora-net
+      - my-net
 
 
 networks:
-  novesfora-net:
+  my-net:
     external:
-      name: novesfora_network
+      name: my_project
